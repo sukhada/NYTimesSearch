@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="500dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Begin Date:"
+        android:paddingLeft="10dp"
+        android:id="@+id/tvDate" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:paddingLeft="10dp"
+        android:descendantFocusability="blocksDescendants"
+        android:ems="10"
+        android:id="@+id/eTDate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Sort Order:"
+        android:id="@+id/tvSort" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spSort"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:spinnerMode="dropdown"
+        android:entries="@array/sort_options" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="News Desk:"
+        android:id="@+id/tvNewsDesk" />
+    <CheckBox android:id="@+id/arts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arts" />
+    <CheckBox android:id="@+id/fashion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fashion and Style" />
+    <CheckBox android:id="@+id/sports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sports" />
+
+    <Button
+        android:id="@+id/filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp"
+        android:text="Filter" />
+
+</LinearLayout>
